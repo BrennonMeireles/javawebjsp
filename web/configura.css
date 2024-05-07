@@ -1,35 +1,89 @@
-header{
-    width: 90%;
-    background-color: #c0c0c0;
-    padding: 10px;
-}
-nav{
-    width: 90%;
-    background-color: #99ffff;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+    font-family: "Inter", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-nav a{
+header {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 30px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 25px;
+}
+
+nav > div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
     text-decoration: none;
+    color: #000;
 }
-nav a:hover{
-    color:red;
+
+ul {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    text-align: center;
 }
-main{
-    width: 90%;
-    padding: 10px;
-    height: 300px;
-    background-color: #ededed;
+
+ul {
+    display: inline;
 }
-footer{
-    width: 90%;
-    padding: 10px;
-    background-color: #fff4f4;
+
+ul > a {
+    text-decoration: none;
+    position: relative; /* Para garantir que a barra seja posicionada em relação a este elemento */
 }
-iframe{
+
+ul > a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transition: width 0.3s ease, left 0.3s ease; /* Adiciona transição suave */
+}
+
+ul > a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+main {
+    padding: 30px;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 30px;
+    background-color: #000;
+    color: #fff;
+}
+
+iframe {
     border: 0px;
     width: 100%;
     height: 500px;

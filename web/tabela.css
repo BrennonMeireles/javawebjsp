@@ -1,8 +1,10 @@
 table{
-    width: 70%;
+    width: 100%;
     background-color: background;
     border: solid #c0c0c0 1px;
     padding: 10px;
+    border: 1px solid #8b8b8b;
+
 }
 
 * {
@@ -14,10 +16,9 @@ th{
     color: white;
     text-align: left;
     padding: 5px 10px;
+    border: 1px solid #8b8b8b;
 }
 td {
     border: solid #ededed;
     padding: 5px 10px;      
 }
-
-

@@ -23,7 +23,7 @@
             preco = Double.parseDouble(request.getParameter("preco"));
             
             //Fazendo a conexão com o banco de dados
-            
+
             try{
                 Connection conecta; //é para gerenciar a conexão com o banco de dados 
                 PreparedStatement st; //  é para executar consultas SQL parametrizadas de forma segura e eficiente. 
@@ -53,7 +53,6 @@
                     out.print("<p style='color: red; font-size:25px'> Mensagem de erro: " + erro + "</p>");
                 }
             }
-            
         %>
     </body>
 </html>
